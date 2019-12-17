@@ -1,0 +1,12 @@
+# server
+server:
+  port: 8881
+
+# spring
+spring:
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/midful
+
+
+
