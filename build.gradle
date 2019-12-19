@@ -42,6 +42,7 @@ dependencies {
 	testImplementation 'de.flapdoodle.embed:de.flapdoodle.embed.mongo'
 	testImplementation 'io.projectreactor:reactor-test'
 	testImplementation 'org.springframework.restdocs:spring-restdocs-webtestclient'
+    implementation 'junit:junit:4.12'
 }
 
 test {
