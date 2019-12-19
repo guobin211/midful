@@ -1,6 +1,10 @@
 package com.mix.midful.service;
 
 import com.mix.midful.dto.OrderDTO;
+import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 /**
@@ -9,20 +13,29 @@ import reactor.core.publisher.Mono;
  * @author guobin211
  * @version 0.0.1
  */
-interface BuyerService {
-    /**
-     * 查询单个订单
-     * @param openid 用户openid
-     * @param orderId 订单id
-     * @return Mono<OrderDTO>
-     */
-    Mono<OrderDTO> findOrderOne(String openid, String orderId);
+@Service
+@Slf4j
+public class BuyerService {
+
+    private final Logger logger = LoggerFactory.getLogger(BuyerService.class);
 
     /**
-     * 取消单个订单
-     * @param openid 用户openid
+     * 查询订单
+     * @param openid openid
      * @param orderId 订单id
-     * @return Mono<OrderDTO>
+     * @return 订单信息
      */
-    Mono<OrderDTO> cancelOrder(String openid, String orderId);
+    public Mono<OrderDTO> findOrderOne(String openid, String orderId) {
+        return null;
+    }
+
+    /**
+     * 取消订单
+     * @param openid openid
+     * @param orderId 订单id
+     * @return 订单信息
+     */
+    public Mono<OrderDTO> cancelOrder(String openid, String orderId) {
+        return null;
+    }
 }
