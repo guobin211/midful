@@ -2,7 +2,9 @@ package com.mix.midful.document;
 
 import com.mix.midful.enums.OrderStatusEnum;
 import com.mix.midful.enums.PayStatusEnum;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -15,6 +17,8 @@ import java.util.Date;
  */
 @Document(collation = "order_master")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class OrderMaster {
 
     /** 订单id. */

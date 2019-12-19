@@ -3,7 +3,9 @@ package com.mix.midful.document;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.mix.midful.enums.ProductStatusEnum;
 import com.mix.midful.utils.EnumUtil;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
@@ -17,6 +19,8 @@ import java.util.Date;
  */
 @Document(collation = "product_info")
 @Data
+@AllArgsConstructor
+@NoArgsConstructor
 public class ProductInfo {
 
     @Id
