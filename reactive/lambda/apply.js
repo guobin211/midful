@@ -1,12 +1,13 @@
-function Person(name) {
-  this.name = name;
-  this.creatAt = new Date().toUTCString();
+class Person {
+  constructor(name) {
+    this.name = name;
+    this.creatAt = new Date().toUTCString();
+  }
+  introduce() {
+    console.log(`hello I'm ${this.name}`);
+  }
 }
 
-Person.prototype.introduce = function () {
-  console.log(`hello I'm ${this.name}`);
-  
-}
 const jack = new Person('jack')
 const tom = new Person('tom')
 

@@ -2,8 +2,6 @@ package com.mix.midful.service;
 
 import com.mix.midful.dto.OrderDTO;
 import lombok.extern.slf4j.Slf4j;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
@@ -16,8 +14,6 @@ import reactor.core.publisher.Mono;
 @Service
 @Slf4j
 public class BuyerService {
-
-    private final Logger logger = LoggerFactory.getLogger(BuyerService.class);
 
     /**
      * 查询订单

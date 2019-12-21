@@ -15,7 +15,7 @@ import java.util.List;
 
 /**
  * OrderDTO
- *
+ * 订单信息
  * @author guobin211
  * @version 0.0.1
  */
