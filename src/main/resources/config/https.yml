@@ -1,0 +1,9 @@
+https:
+  port: 443
+  path: /usr/local/var/443/
+
+admin:
+  nickName: 系统管理员
+  username: admin
+  password: admin888
+

@@ -1,7 +1,7 @@
 package com.mix.midful.listener;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.mix.midful.config.HttpsConfig;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.env.Environment;
 import org.springframework.stereotype.Component;
@@ -15,22 +15,25 @@ import java.util.Arrays;
  * @version 0.0.1
  */
 @Component
+@Slf4j
 public class HelloAppCommand implements CommandLineRunner {
-
-    private final Logger logger = LoggerFactory.getLogger(HelloAppCommand.class);
 
     private final Environment environment;
 
-    HelloAppCommand(Environment environment) {
+    private final HttpsConfig httpsConfig;
+
+    HelloAppCommand(Environment environment, HttpsConfig httpsConfig) {
         this.environment = environment;
+        this.httpsConfig = httpsConfig;
     }
 
     @Override
     public void run(String... args) throws Exception {
         System.out.println("HelloAppCommand.run()...");
         System.out.println(Arrays.toString(this.environment.getActiveProfiles()));
-        String data = this.environment.getProperty("data");
-        logger.info("[environment]: {}", data);
+        String data = this.environment.getProperty("logging.file.path");
+        log.info("[environment]: {}", data);
+        log.info("[httpsConfig]: {}", httpsConfig.getPort());
     }
 
     private void initState() {}
