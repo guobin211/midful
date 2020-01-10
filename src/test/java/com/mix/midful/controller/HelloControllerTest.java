@@ -82,7 +82,8 @@ class HelloControllerTest {
                 .exchange()
                 .expectStatus().isOk()
                 .expectBody(Integer.class)
-                .consumeWith(System.out::println);
+                .consumeWith(System.out::println)
+                .equals(expectedValue);
 
     }
 }

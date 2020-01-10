@@ -22,6 +22,7 @@ public class BuyerService {
      * @return 订单信息
      */
     public Mono<OrderDTO> findOrderOne(String openid, String orderId) {
+        log.info("BuyerService{ findOrderOne() }");
         return null;
     }
 
