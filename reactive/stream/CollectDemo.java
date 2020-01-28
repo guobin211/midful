@@ -34,6 +34,10 @@ enum Gender {
     this.desc = desc;
   }
 
+  public int getSex() {
+    return sex;
+  }
+
   /**
    * @return the desc
    */
