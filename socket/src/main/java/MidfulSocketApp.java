@@ -6,5 +6,6 @@
  */
 public class MidfulSocketApp {
     public static void main(String[] args) {
+        System.out.println("MidfulSocketApp: run...");
     }
 }
