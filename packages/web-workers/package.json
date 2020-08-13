@@ -1,6 +1,7 @@
 {
   "name": "web-workers",
   "version": "1.0.0",
+  "main": "index.js",
   "dependencies": {
     "@types/node": "^14.0.27"
   }
