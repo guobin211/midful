@@ -2,7 +2,9 @@
   "name": "root",
   "private": true,
   "scripts": {
-    "start": "lerna bootstrap"
+    "start": "lerna bootstrap",
+    "compile": "tsc packages/web-workers/src/index.ts",
+    "info": "node scripts/bootstrap.js"
   },
   "workspaces": [
     "packages/*"
@@ -13,10 +15,21 @@
     "@types/react": "^16.1.0",
     "@types/react-dom": "^16.1.0",
     "@assemblyscript/loader": "^0.14.8",
-    "assemblyscript": "^0.14.8"
+    "rollup": "^2.25.0",
+    "assemblyscript": "^0.14.8",
+    "typescript": "^3.9.7",
+    "copy-webpack-plugin": "^6.0.3",
+    "ts-loader": "^8.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
-  }
+  },
+  "description": "mid full for node full stack",
+  "repository": {
+    "url": ""
+  },
+  "license": "MIT"
 }
