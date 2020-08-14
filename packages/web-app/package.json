@@ -1,0 +1,22 @@
+{
+  "name": "web-app",
+  "version": "1.0.0",
+  "description": "mid full for node full stack",
+  "scripts": {
+    "tsc": "tsc",
+    "tscw": "tsc --watch",
+    "wp": "webpack",
+    "wpw": "webpack --watch"
+  },
+  "devDependencies": {
+    "typescript": "^3.9.7",
+    "copy-webpack-plugin": "^6.0.3",
+    "ts-loader": "^8.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "repository": {
+    "url": ""
+  },
+  "license": "MIT"
+}
