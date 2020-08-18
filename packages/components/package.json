@@ -6,13 +6,13 @@
     "url": ""
   },
   "license": "MIT",
-  "devDependencies": {
-    "@types/react": "^16.1.0",
-    "@types/react-dom": "^16.1.0",
-    "rollup": "^2.25.0"
-  },
   "peerDependencies": {
     "react": "^16.13.0",
     "react-dom": "^16.13.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.7"
   }
 }

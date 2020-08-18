@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "sourceMap": true,
+    "module": "ESNext",
+    "target": "ESNext",
+    "moduleResolution": "Node",
+    "allowJs": false,
+    "strict": true,
+    "noUnusedLocals": true,
+    "experimentalDecorators": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "removeComments": false,
+    "jsx": "react",
+    "lib": [
+      "DOM",
+      "ESNext"
+    ],
+    "composite": true,
+    "declaration": true
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

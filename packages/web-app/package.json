@@ -8,15 +8,13 @@
     "wp": "webpack",
     "wpw": "webpack --watch"
   },
-  "devDependencies": {
-    "typescript": "^3.9.7",
-    "copy-webpack-plugin": "^6.0.3",
-    "ts-loader": "^8.0.2",
-    "webpack": "^4.44.1",
-    "webpack-cli": "^3.3.12"
-  },
   "repository": {
     "url": ""
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "typescript": "^3.9.7"
+  }
 }
