@@ -1,3 +1,3 @@
-import { default as Td } from "./td.component"
-import { default as Tr } from "./tr.component"
-import { default as Th } from "./th.component"
+export { default as Td } from "./td.component"
+export { default as Tr } from "./tr.component"
+export { default as Th } from "./th.component"

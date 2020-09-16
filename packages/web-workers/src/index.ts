@@ -4,9 +4,9 @@ interface MessageData<T> {
 }
 
 (() => {
-  let original
-  self.onmessage = (ev) => {
-    original = ev.original
+  let original: any
+  self.onmessage = (ev: MessageEvent) => {
+    original = ev.origin
     try {
 
       const data: number[] = JSON.parse(ev.data)
@@ -24,7 +24,7 @@ interface MessageData<T> {
   self.onerror = (error) => {
     postMessage({ type: "onerror", body: error }, original)
   }
-  self.onmessageerror = (error) => {
+  self.onmessageerror = (error: MessageEvent) => {
     postMessage({ type: "onmessageerror", body: error }, original)
   }
 
